@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowtham - Portfolio</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: transparent;
+    overflow: hidden; /* Stop scrolling */
+}
+
+        header {
+            background-color: #333;
+            color: red;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+/* Define the animation */
+@keyframes textAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Apply the animation to the h1 element */
+h1 {
+    animation: textAnimation 2s ease-in-out infinite; /* Use infinite to loop the animation */
+}
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 3rem; 
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        /* Skills Section Styles */
+        .skills {
+            text-align: center;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .skills ul li {
+            margin-right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Work Section Styles */
+        .work {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .work img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        /* Contact Section Styles */
+        .contact {
+            text-align: center;
+        }
+
+        .contact input,
+        .contact textarea,
+        .contact button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .contact button {
+            background-color: green; /* Changed button color to green */
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px; /* Increased button padding */
+            border-radius: 2px; /* Added border radius */
+            font-size: 1.2rem; /* Increased font size */
+            width: 20px; /* Set button width */
+        }
+
+        /* Footer Styles */
+        footer {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            right: 20px; /* Align to the right */
+            bottom: 20px; /* Align to the bottom */
+        }
+
+        footer p {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        footer a {
+            margin-left: 10px; /* Add some space between icons */
+        }
+
+        /* Middle Left Text Styles */
+        .middle-left-text {
+            text-align: center;
+            flex: 1;
+        }
+
+        /* Middle Right Photo Styles */
+        .middle-right-photo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .middle-right-photo img {
+            border-radius: 50%;
+            width: 200px; /* Adjust size as needed */
+            height: 200px; /* Maintain aspect ratio */
+        }
+
+        /* Custom Styles */
+        .blue-text {
+            color: blue; /* Change text color to blue */
+            font-size: 3rem; /* Match font size with name */
+            font-weight: bold; /* Make text bold */
+        }
+
+        .black-text {
+            color: black; /* Change text color to black */
+            font-size: 3rem; /* Match font size with name */
+            font-weight: bold; /* Make text bold */
+        }
+
+        .red-text {
+            color: rgb(113, 14, 14); /* Change text color to red */
+            font-size: 3rem; /* Match font size with name */
+            font-weight: bold; /* Make text bold */
+        }
+
+        /* Font Awesome Icons */
+        footer i {
+            font-size: 2rem; /* Increase icon size */
+        }
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+<li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="middle-left-text">
+            <h2 class="section-title">Hi,</h2>
+		<h2 class="section-title">I am <span class="blue-text">Gowtham</span></h2>
+            <p class="black-text">From Hyderabad </p> <!-- Use black-text class -->
+            
+        </div>
+        <div class="middle-right-photo">
+            <img src="C:\Users\gowth\Desktop\sgs.jpg" alt="Profile Picture">
+        </div>
+    </main>
+    <footer>
+    <p>
+        <a href="https://www.linkedin.com/in/sunkara-gowtham-bb082a219?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWz66U30KRhG91gnTkC%2FHgg%3D%3D" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/bunny905" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+    </p>
+</footer>
+
+    <script>
+        function openContact() {
+            alert("Contact details: gowtham912sunkara@gmail.com");
+alert("Ph No.: +91 8688969323");
+        }
+    </script>
+</body>
+</html>
